@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Talleres</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="enfermedades">
+        <item>Caries</item>
+        <item>Periodontitis</item>
+        <item>Gingivitis</item>
+        <item>Profilaxis</item>
+        <item>Halitosis</item>
+        <item>Afta</item>
+    </string-array>
+
+</resources>
