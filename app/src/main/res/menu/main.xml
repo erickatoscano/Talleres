@@ -10,8 +10,8 @@
         android:id="@+id/taller2"
         android:title="Taller 2"
         app:showAsAction="always"/>
-    <item android:id="@+id/sub1"
-        android:title="Opcion 1"
+    <item android:id="@+id/taller3"
+        android:title="Taller 3"
         app:showAsAction="never"/>
     <item android:id="@+id/sub2"
         android:title="Opcion 2"

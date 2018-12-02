@@ -12,5 +12,8 @@
         <item>Halitosis</item>
         <item>Afta</item>
     </string-array>
+    <string name="titlulo_pickers">Obtener fecha y hora</string>
 
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="formato_hora">hh:mm</string>
 </resources>
