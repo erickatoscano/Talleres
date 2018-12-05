@@ -3,26 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/favorite"
-        android:icon="@drawable/ic_favorite_black_24dp"
-        android:title=""
-        app:showAsAction="always"/>
-
-    <item
-        android:id="@+id/message"
-        android:icon="@drawable/ic_forum_black_24dp"
-        android:title=""
-        app:showAsAction="always"/>
-
-    <item
-        android:id="@+id/search_bar"
-        android:icon="@drawable/ic_search_black_24dp"
-        android:title=""
-        app:showAsAction="always"/>
-
-    <item
         android:id="@+id/out"
-        android:icon="@drawable/ic_arrow_forward_black_24dp"
-        android:title=""
+        android:title="Regresar"
         app:showAsAction="always"/>
 </menu>

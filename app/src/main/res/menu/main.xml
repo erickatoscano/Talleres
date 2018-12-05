@@ -4,23 +4,23 @@
 
     <item
         android:id="@+id/taller1"
-        android:title="Taller 1"
+        android:title="Nuevo"
         app:showAsAction="always"/>
     <item
         android:id="@+id/taller2"
-        android:title="Taller 2"
+        android:title="Crear"
         app:showAsAction="always"/>
     <item android:id="@+id/taller3"
-        android:title="Taller 3"
+        android:title="Guardar"
         app:showAsAction="never"/>
-    <item android:id="@+id/sub2"
-        android:title="Opcion 2"
+    <item android:id="@+id/tema5"
+        android:title="Abrir"
         app:showAsAction="never"/>
-    <item android:id="@+id/sub3"
-        android:title="Opcion 3"
+    <item android:id="@+id/tema6"
+        android:title="Imprimir"
         app:showAsAction="never"/>
     <item android:id="@+id/sub4"
-        android:title="Opcion 4"
+        android:title="Salir"
         app:showAsAction="never"/>
 
 

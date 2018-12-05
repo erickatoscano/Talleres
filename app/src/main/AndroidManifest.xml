@@ -21,7 +21,10 @@
         </activity>
         <activity android:name=".taller_1" />
         <activity android:name=".taller_2" />
-        <activity android:name=".taller3"></activity>
+        <activity android:name=".tema5" />
+        <activity android:name=".tema_3" />
+        <activity android:name=".taller3_1" />
+        <activity android:name=".taller4"></activity>
     </application>
 
 </manifest>

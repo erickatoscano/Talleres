@@ -28,84 +28,61 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
-    private TabLayout tabLayout;
+    private Button b1, b2, b3, b4, b5;
 
-
-    private int[]tabIcons={R.drawable.happy,
-            R.drawable.ic_sentiment_satisfied_black_24dp,
-            R.drawable.ic_sentiment_very_satisfied_black_24dp};
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = (Toolbar)findViewById(R.id.toolbar1);
-        setSupportActionBar(toolbar);
-
-        tabLayout = findViewById(R.id.tabLayout);
-
-        tabIcons();
-        iconColor(tabLayout.getTabAt(tabLayout.getSelectedTabPosition()),"#FFFFFF");
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        b1=(Button) findViewById(R.id.btn_tema1);
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                iconColor(tab,"#FFFFFF");
-
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                iconColor(tab,"#5273AF");
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
+            public void onClick(View v) {
+                Intent intent1 = new Intent(getApplicationContext(), taller_1.class);
+                startActivity(intent1);
             }
         });
 
-    }
-
-
-    private void iconColor(TabLayout.Tab tab, String color){
-        tab.getIcon().setColorFilter(Color.parseColor(color), PorterDuff.Mode.SRC_IN);
-    }
-
-
-    private void tabIcons(){
-        for(int i=0; i<3;i++){
-            tabLayout.addTab(tabLayout.newTab().setIcon(tabIcons[i]));
-        }
-    }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem menuItem){
-        switch (menuItem.getItemId()){
-            case R.id.taller1:
-                Intent intent1 = new Intent(this, taller_1.class);
+        b2=(Button) findViewById(R.id.btn_tema2);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(getApplicationContext(), taller_2.class);
                 startActivity(intent1);
-                break;
-            case R.id.taller2:
-                Intent intent2 = new Intent(this, taller_2.class);
-                startActivity(intent2);
-                break;
+            }
+        });
 
-            case R.id.taller3:
-                Intent intent3 = new Intent(this, taller3.class);
-                startActivity(intent3);
-                break;
-        }
-        return true;
+        b3=(Button) findViewById(R.id.btn_tema3);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(getApplicationContext(), tema_3.class);
+                startActivity(intent1);
+            }
+        });
+
+        b4=(Button) findViewById(R.id.btn_tema4);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), taller4.class);
+                startActivity(intent);
+            }
+        });
+
+        b5=(Button) findViewById(R.id.btn_tema5);
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), tema5.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
+
+
 }
